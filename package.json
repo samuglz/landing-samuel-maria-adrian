@@ -7,7 +7,7 @@
     "dev": "npx parcel src/index.html --open",
     "lint:css": "stylelint src/css/**/*.css",
     "prebuild": "rm -rf ./dist",
-    "build": "npx parcel build src/index.html"
+    "build": "npx parcel build src/index.html --no-source-maps"
   },
   "keywords": [],
   "author": "Samuel y María",
