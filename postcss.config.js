@@ -2,7 +2,7 @@ module.exports = {
   plugins: {
     tailwindcss: true,
     "@fullhuman/postcss-purgecss": {
-      content: ["./**/*.html"]
+      content: ["src/**/*.html"]
     },
     "postcss-preset-env": {
       stage: 3,
