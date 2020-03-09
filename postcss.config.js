@@ -1,5 +1,4 @@
 const isDev = process.env.NODE_ENV === 'dev';
-console.log(isDev);
 
 const config = {
    plugins: {
@@ -20,7 +19,5 @@ const config = {
 };
 
 if (isDev) delete config.plugins['@fullhuman/postcss-purgecss'];
-
-console.log(config);
 
 module.exports = config;
