@@ -1,3 +1,43 @@
+:root {
+   --slide-width: 100%;
+   --slide-height: 250px;
+}
+
 @tailwind base;
 @tailwind components;
+
+div > img {
+   filter: drop-shadow(1px 1px 3px #000);
+}
+@responsive {
+   .slider {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      display: flex;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+   }
+}
+.slide {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: var(--slide-width);
+   flex-shrink: 0;
+   height: 100%;
+}
+.dot {
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #33f29c;
+   border-radius: 50%;
+   transition: background-color 0.6s ease;
+}
+.active {
+   background-color: #059e59;
+}
+
 @tailwind utilities;
