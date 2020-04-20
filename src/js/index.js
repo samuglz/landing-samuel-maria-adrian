@@ -1,6 +1,6 @@
 const dots = document.querySelectorAll('.dot');
 let currentSlide = 1;
-const TIME_TO_SLIDE = 1000;
+const TIME_TO_SLIDE = 10000;
 const SM_SCREEN = 640;
 const FIRST_SLIDE = 1;
 const isDesktop = window.innerWidth > SM_SCREEN;
