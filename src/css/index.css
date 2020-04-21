@@ -1,12 +1,12 @@
 :root {
    --slide-width: 100%;
-   --slide-height: 250px;
+   --slide-height: 200px;
 }
 
 @tailwind base;
 @tailwind components;
 
-div > img {
+.img-shadow {
    filter: drop-shadow(1px 1px 3px #000);
 }
 
@@ -20,6 +20,9 @@ div > img {
       -webkit-overflow-scrolling: touch;
       scroll-behavior: smooth;
    }
+}
+.scroll-smooth {
+   scroll-behavior: smooth;
 }
 .slide {
    display: flex;
