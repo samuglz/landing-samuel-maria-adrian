@@ -5,11 +5,15 @@
 
 @tailwind base;
 @tailwind components;
-
 .img-shadow {
    filter: drop-shadow(1px 1px 3px #000);
 }
-
+.flip-wave {
+   transform: scaleX(-1);
+}
+.layer-wave {
+   z-index: -10;
+}
 @responsive {
    .slider {
       width: var(--slide-width);
