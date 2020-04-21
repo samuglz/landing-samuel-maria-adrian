@@ -2,7 +2,6 @@
    --slide-width: 100%;
    --slide-height: 200px;
 }
-
 @tailwind base;
 @tailwind components;
 .img-shadow {
