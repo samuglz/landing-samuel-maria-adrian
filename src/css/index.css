@@ -10,9 +10,6 @@ html {
 .img-shadow {
    filter: drop-shadow(1px 1px 3px #000);
 }
-.justify-items-center {
-   justify-items: center;
-}
 .flip-wave {
    transform: scaleX(-1);
 }
@@ -23,37 +20,22 @@ html {
    .svg-height {
       height: 75vh;
    }
-   .slider {
-      width: var(--slide-width);
-      height: var(--slide-height);
-      display: flex;
-      overflow-x: hidden;
-      overflow-y: hidden;
-      -webkit-overflow-scrolling: touch;
-      scroll-behavior: smooth;
+}
+
+.anchor {
+   animation: blink 0.35s linear alternate infinite;
+}
+
+@keyframes blink {
+   0% {
+      opacity: 0;
    }
-}
-.scroll-smooth {
-   scroll-behavior: smooth;
-}
-.slide {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: var(--slide-width);
-   flex-shrink: 0;
-   height: 100%;
-}
-.dot {
-   height: 15px;
-   width: 15px;
-   margin: 0 2px;
-   background-color: #33f29c;
-   border-radius: 50%;
-   transition: background-color 0.6s ease;
-}
-.active {
-   background-color: #059e59;
+   50% {
+      opacity: 0.5;
+   }
+   100% {
+      opacity: 1;
+   }
 }
 
 @tailwind utilities;
