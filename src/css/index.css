@@ -4,8 +4,14 @@
 }
 @tailwind base;
 @tailwind components;
+html {
+   scroll-behavior: smooth;
+}
 .img-shadow {
    filter: drop-shadow(1px 1px 3px #000);
+}
+.justify-items-center {
+   justify-items: center;
 }
 .flip-wave {
    transform: scaleX(-1);
@@ -14,6 +20,9 @@
    z-index: -10;
 }
 @responsive {
+   .svg-height {
+      height: 75vh;
+   }
    .slider {
       width: var(--slide-width);
       height: var(--slide-height);
