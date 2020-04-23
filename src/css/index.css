@@ -4,9 +4,6 @@
 }
 @tailwind base;
 @tailwind components;
-html {
-   scroll-behavior: smooth;
-}
 .img-shadow {
    filter: drop-shadow(1px 1px 3px #000);
 }
@@ -20,26 +17,29 @@ html {
    .svg-height {
       height: 75vh;
    }
+   .nav-panel {
+      right: 10px;
+      top: 50%;
+      transform: translate(0, -50%);
+   }
+}
+
+.dot {
+   width: 1rem;
+   height: 1rem;
+   background-color: #68d391;
+   border-radius: 50%;
+   margin-top: 0.25rem;
+   margin-bottom: 0.25rem;
+   transition: background-color 0.6s ease;
+}
+
+.active {
+   background-color: #2f855a;
 }
 
 .font-italic {
    font-family: 'Courgette', cursive;
-}
-
-.anchor {
-   animation: blink 0.35s linear alternate infinite;
-}
-
-@keyframes blink {
-   0% {
-      opacity: 0;
-   }
-   50% {
-      opacity: 0.5;
-   }
-   100% {
-      opacity: 1;
-   }
 }
 
 @tailwind utilities;
