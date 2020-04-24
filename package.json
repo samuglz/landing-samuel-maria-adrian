@@ -1,10 +1,11 @@
 {
-   "name": "landing-samuel-maria",
+   "name": "landing-samuel-maria-adrian",
    "version": "1.0.0",
    "description": "Landing page para el proyecto del curso de Front-End",
    "main": "src/index.html",
    "scripts": {
       "start": "NODE_ENV=dev npx parcel serve $npm_package_main --open --no-cache -d dist",
+      "prestart": "echo \"hola\"",
       "lint:css": "stylelint src/css/**/*.css",
       "prebuild": "rm -rf dist build",
       "build": "npx parcel build $npm_package_main -d build --public-url /$npm_package_name",
