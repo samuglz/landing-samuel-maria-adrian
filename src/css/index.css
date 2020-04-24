@@ -12,13 +12,16 @@
 }
 
 @responsive {
-   .svg-height {
+   .svg-desktop {
       height: 75vh;
    }
    .nav-panel {
       right: 10px;
       top: 50%;
       transform: translate(0, -50%);
+   }
+   .svg-mobile {
+      height: 50vh;
    }
 }
 

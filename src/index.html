@@ -19,6 +19,7 @@
                <a id="nav-3" class="dot" href="#section-3"></a>
                <a id="nav-4" class="dot" href="#section-4"></a>
                <a id="nav-5" class="dot" href="#section-5"></a>
+               <a id="nav-6" class="dot" href="#section-6"></a>
             </div>
          </nav>
          <div id="section-1" class="flex flex-col min-h-screen">
@@ -46,7 +47,7 @@
                   class="flex items-center text-green-600 justify-center flex-col"
                >
                   <img
-                     class="md:svg-height hidden md:block w-4/5 px-8"
+                     class="md:svg-desktop hidden md:block w-4/5 px-8"
                      src="./assets/TelePharma-logo/vector/default-monochrome.svg"
                      alt="Logo"
                   />
@@ -68,7 +69,7 @@
                   <img
                      data-aos="fade-up"
                      data-aos-duration="250"
-                     class="md:svg-height md:w-2/5 img-shadow mt-10 px-4"
+                     class="md:svg-desktop md:w-2/5 img-shadow mt-10 pl-8"
                      src="./assets/Delivery_app_SVG.svg"
                      alt="Delivery"
                   />
@@ -96,7 +97,7 @@
                   <img
                      data-aos="fade-up"
                      data-aos-duration="250"
-                     class="md:svg-height img-shadow md:w-2/5 mt-10 px-4"
+                     class="md:svg-desktop img-shadow md:w-2/5 mt-10 pl-8"
                      src="./assets/Online_banking_SVG.svg"
                      alt="Pay Online"
                   />
@@ -131,7 +132,7 @@
                   <img
                      data-aos="fade-up"
                      data-aos-duration="250"
-                     class="md:svg-height img-shadow md:w-2/5 mt-10 px-4"
+                     class="md:svg-desktop img-shadow md:w-2/5 mt-10 pl-8"
                      src="./assets/Map_SVG.svg"
                      alt="Map"
                   />
@@ -153,19 +154,11 @@
                </svg>
             </div>
             <div class="flex-grow">
-               <div class="absolute w-full h-auto layer-wave hidden md:block">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                     <path
-                        fill="#48bb78"
-                        d="M0 288l80-32c80-32 240-96 400-128s320-32 480-37.3c160-5.7 320-15.7 400-21.4l80-5.3V0H0z"
-                     />
-                  </svg>
-               </div>
                <div class="flex items-center justify-around">
                   <img
                      data-aos="fade-up"
                      data-aos-duration="250"
-                     class="md:svg-height md:w-2/5 img-shadow mt-10 px-4"
+                     class="md:svg-desktop md:w-2/5 img-shadow mt-10 pl-8"
                      src="./assets/Mobile_notification_SVG.svg"
                      alt="Mobile Notification"
                   />
@@ -178,6 +171,60 @@
                </div>
             </div>
          </div>
+         <div id="section-6" class="flex flex-col min-h-screen">
+            <div class="absolute w-full h-auto layer-wave hidden md:block">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                  <path
+                     fill="#48bb78"
+                     d="M0 96l48 5.3c48 5.7 144 15.7 240 48C384 181 480 235 576 224s192-85 288-96 192 43 288 48 192-37 240-58.7l48-21.3V0H0z"
+                  />
+               </svg>
+            </div>
+            <div class="flex-grow">
+               <div class="flex flex-col items-center">
+                  <img
+                     data-aos="fade-up"
+                     data-aos-duration="250"
+                     class="svg-mobile md:w-2/5 img-shadow mt-10"
+                     src="./assets/email.svg"
+                     alt="Mobile Notification"
+                  />
+                  <h1 class="text-5xl font-italic pb-5 text-gray-900">
+                     Boletín informativo
+                  </h1>
+                  <div class="w-full flex justify-center items-center">
+                     <input
+                        type="email"
+                        name="newsletter"
+                        id="newsletter"
+                        placeholder="Introduce email"
+                        autocomplete="off"
+                        class="border rounded rounded-r-none shadow w-3/5 py-2 px-3 text-gray-700 focus:outline-none"
+                     />
+                     <button
+                        class="border border-green-400 shadow px-5 py-2 rounded rounded-l-none hover:bg-green-600 bg-green-400 text-white font-bold"
+                     >
+                        Suscríbete
+                     </button>
+                  </div>
+                  <a href="#" class="hover:underline text-green-500 text-sm mt-2">
+                     *Al ingresar su correo electrónico, acepta recibir correos electrónicos de marketing de TelePharma.
+                  </a>
+               </div>
+            </div>
+         </div>
       </main>
+      <footer class="bg-green-400 fixed bottom-0 min-w-full h-24 py-3">
+         <div class="h-full">
+            <div class="flex justify-center items-center">
+               <div class="flex justify-around w-1/2">
+                  <a href="#"><i class="fab fa-linkedin text-5xl text-gray-900"></i></a>
+                  <a href="#"><i class="fab fa-facebook-square text-5xl text-gray-900"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square text-5xl text-gray-900"></i></a>
+               </div>
+            </div>
+            <p id="autoria" class="text-gray-900 text-center mt-1"></p>
+         </div>
+      </footer>
    </body>
 </html>

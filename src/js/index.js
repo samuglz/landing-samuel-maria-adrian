@@ -8,6 +8,10 @@ let currentSection = 1;
 window.onresize = manageWheelEvent;
 manageWheelEvent();
 
+const date = new Date();
+const textFooter = document.querySelector('#autoria');
+textFooter.innerHTML = `&copy; Adrián, Samuel y María | ${date.getFullYear()}`;
+
 function manageWheelEvent() {
    if (window.innerWidth >= 768) {
       window.addEventListener('wheel', wheelListener);
