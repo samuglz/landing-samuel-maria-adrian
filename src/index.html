@@ -10,9 +10,9 @@
       <script defer src="js/index.js"></script>
       <title>TelePharma</title>
    </head>
-   <body class="overflow-hidden">
+   <body class="overflow-x-hidden overflow-y-visible md:overflow-y-hidden">
       <main>
-         <nav class="fixed nav-panel">
+         <nav class="md:fixed md:nav-panel hidden md:block">
             <div class="flex flex-col items-center">
                <a id="nav-1" class="dot active" href="#section-1"></a>
                <a id="nav-2" class="dot" href="#section-2"></a>
@@ -64,14 +64,6 @@
                </svg>
             </div>
             <div class="flex-grow">
-               <div class="absolute w-full h-auto layer-wave hidden md:block">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                     <path
-                        fill="#48bb78"
-                        d="M0 288l80-32c80-32 240-96 400-128s320-32 480-37.3c160-5.7 320-15.7 400-21.4l80-5.3V0H0z"
-                     />
-                  </svg>
-               </div>
                <div class="flex items-center justify-around">
                   <img
                      data-aos="fade-up"
@@ -110,7 +102,7 @@
                   />
                   <div class="w-3/5 px-20 font-italic">
                      <div data-aos="fade-down" data-aos-duration="250" class="flex flex-col items-center">
-                        <h3 class="text-4xl underline text-gray-800">Métodos de pago:</h3>
+                        <h3 class="text-4xl text-gray-800">Métodos de pago:</h3>
                         <div class="text-gray-800 text-6xl">
                            <i class="fab fa-cc-visa"></i>
                            <i class="fab fa-cc-mastercard"></i>

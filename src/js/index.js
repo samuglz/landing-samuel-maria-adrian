@@ -2,40 +2,51 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 
-const dots = document.querySelectorAll('.dot');
-let stateSection = 1;
+const dotsNav = document.querySelectorAll('.dot');
+let currentSection = 1;
+
+window.onresize = manageWheelEvent;
+manageWheelEvent();
+
+function manageWheelEvent() {
+   if (window.innerWidth >= 768) {
+      window.addEventListener('wheel', wheelListener);
+   } else {
+      window.removeEventListener('wheel', wheelListener);
+   }
+}
 
 function removeActiveClass() {
-   dots.forEach((el) => {
+   dotsNav.forEach((el) => {
       el.classList.remove('active');
    });
 }
 
 function scrollDown() {
    window.scrollBy(0, window.innerHeight);
-   if (stateSection < dots.length) {
-      stateSection++;
+   if (currentSection < dotsNav.length) {
+      currentSection++;
    }
 }
 
 function scrollUp() {
-   if (stateSection > 1) {
-      stateSection--;
+   if (currentSection > 1) {
+      currentSection--;
    }
    window.scrollBy(0, -window.innerHeight);
 }
 
-dots.forEach((dot) => {
+dotsNav.forEach((dot) => {
    dot.addEventListener('click', () => {
       removeActiveClass();
       dot.classList.add('active');
-      stateSection = parseInt(dot.id.slice(4));
+      currentSection = parseInt(dot.id.slice(4));
    });
 });
 
-window.addEventListener('wheel', (e) => {
-   e.deltaY > 0 ? scrollDown() : scrollUp();
-   const activeDot = document.querySelector(`#nav-${stateSection}`);
+function wheelListener(event) {
+   event.deltaY > 0 ? scrollDown() : scrollUp();
+   const activeDot = document.querySelector(`#nav-${currentSection}`);
    removeActiveClass();
    activeDot.classList.add('active');
-});
+}

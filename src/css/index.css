@@ -1,9 +1,6 @@
-:root {
-   --slide-width: 100%;
-   --slide-height: 200px;
-}
 @tailwind base;
 @tailwind components;
+
 .img-shadow {
    filter: drop-shadow(1px 1px 3px #000);
 }
@@ -13,6 +10,7 @@
 .layer-wave {
    z-index: -10;
 }
+
 @responsive {
    .svg-height {
       height: 75vh;
