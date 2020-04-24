@@ -5,6 +5,6 @@ var e,t=arguments[3];!function(t,n){"object"==typeof exports&&"undefined"!=typeo
 },{}],"cOFZ":[function(require,module,exports) {
 
 },{}],"QvaY":[function(require,module,exports) {
-"use strict";var e=n(require("aos"));function n(e){return e&&e.__esModule?e:{default:e}}require("aos/dist/aos.css"),e.default.init();var t=document.querySelectorAll(".dot"),i=1;function c(){t.forEach(function(e){e.classList.remove("active")})}function o(){window.scrollBy(0,window.innerHeight),i<t.length&&i++}function a(){i>1&&i--,window.scrollBy(0,-window.innerHeight)}t.forEach(function(e){e.addEventListener("click",function(){c(),e.classList.add("active"),i=parseInt(e.id.slice(4))})}),window.addEventListener("wheel",function(e){e.deltaY>0?o():a();var n=document.querySelector("#nav-".concat(i));c(),n.classList.add("active")});
+"use strict";var e=n(require("aos"));function n(e){return e&&e.__esModule?e:{default:e}}require("aos/dist/aos.css"),e.default.init();var i=document.querySelectorAll(".dot"),t=1;function o(){window.innerWidth>=768?window.addEventListener("wheel",s):window.removeEventListener("wheel",s)}function c(){i.forEach(function(e){e.classList.remove("active")})}function r(){window.scrollBy(0,window.innerHeight),t<i.length&&t++}function d(){t>1&&t--,window.scrollBy(0,-window.innerHeight)}function s(e){e.deltaY>0?r():d();var n=document.querySelector("#nav-".concat(t));c(),n.classList.add("active")}window.onresize=o,o(),i.forEach(function(e){e.addEventListener("click",function(){c(),e.classList.add("active"),t=parseInt(e.id.slice(4))})});
 },{"aos":"RKkx","aos/dist/aos.css":"cOFZ"}]},{},["QvaY"], null)
-//# sourceMappingURL=/landing-samuel-maria-adrian/js.0dcc4da6.js.map
+//# sourceMappingURL=/landing-samuel-maria-adrian/js.984ad034.js.map
