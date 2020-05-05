@@ -11,7 +11,6 @@
       "predeploy": "rm -rf dist build",
       "deploy": "npx parcel build $npm_package_main -d build --public-url /$npm_package_name",
       "postdeploy": "npx gh-pages -d build",
-      "prenetlify": "rm -rf dist build",
       "netlify": "npx parcel build $npm_package_main -d build"
    },
    "keywords": [],
