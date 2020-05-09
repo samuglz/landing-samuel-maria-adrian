@@ -34,7 +34,7 @@
                </div>
                <div class="w-full flex justify-end">
                   <a
-                     class="px-5 py-2 rounded-full hover:bg-green-400 hover:text-white mt-2 mr-2 md:mt-4 md:mr-20 bg-white text-green-500 font-bold"
+                     class="px-5 py-2 mr-4 rounded-full text-white bg-green-400 md:hover:bg-green-400 md:hover:text-white mt-4 md:mr-20 md:bg-white md:text-green-500 font-bold"
                      href="#"
                      >Regístrate</a
                   >
@@ -47,11 +47,16 @@
                   class="flex items-center text-green-600 justify-center flex-col"
                >
                   <img
-                     class="md:svg-desktop hidden md:block w-4/5 px-8"
+                     class="svg-desktop md:block w-4/5"
                      src="./assets/TelePharma-logo/vector/default-monochrome.svg"
                      alt="Logo"
                   />
                   <p class="font-italic text-gray-800 text-xl">La farmacia al alcance de tu mano</p>
+                  <div class="text-center md:hidden">
+                     <a href="#section-2">
+                        <i class="fas fa-caret-down text-4xl text-gray-800 blink-effect"></i>
+                     </a>
+                  </div>
                </div>
             </div>
          </div>
@@ -65,21 +70,26 @@
                </svg>
             </div>
             <div class="flex-grow">
-               <div class="flex items-center justify-around">
+               <div class="flex md:flex-row flex-col items-center md:justify-around px-2 md:px-0">
                   <img
                      data-aos="fade-up"
                      data-aos-duration="250"
-                     class="md:svg-desktop md:w-2/5 img-shadow mt-10 pl-8"
+                     class="md:svg-desktop svg-mobile md:w-2/5 w-4/5 img-shadow md:mt-10 md:pl-8"
                      src="./assets/Delivery_app_SVG.svg"
                      alt="Delivery"
                   />
-                  <div class="w-3/5 px-20 text-4xl font-italic text-gray-800">
-                     <p data-aos="zoom-in" data-aos-duration="250" class="text-justify">
+                  <div class="md:w-3/5 md:px-20 md:text-4xl text-xl font-italic text-gray-800 px-4 mt-10 md:mt-0">
+                     <p data-aos="zoom-in" data-aos-duration="250" class="md:text-justify text-center">
                         Entregamos tu compra en 1 hora o en franjas horarias de 1 hora, bien el mismo día u otro día que
                         prefieras. <br />
                         El horario de entrega es de lunes a domingo las 24 horas del día.
                      </p>
                   </div>
+               </div>
+               <div class="text-center md:hidden mt-10 md:mt-0">
+                  <a href="#section-3">
+                     <i class="fas fa-caret-down text-4xl text-gray-800 blink-effect"></i>
+                  </a>
                </div>
             </div>
          </div>
@@ -93,27 +103,32 @@
                </svg>
             </div>
             <div class="flex-grow">
-               <div class="flex items-center justify-around">
+               <div class="flex md:flex-row flex-col items-center md:justify-around">
                   <img
                      data-aos="fade-up"
                      data-aos-duration="250"
-                     class="md:svg-desktop img-shadow md:w-2/5 mt-10 pl-8"
+                     class="md:svg-desktop svg-mobile md:w-2/5 w-4/5 img-shadow md:mt-10 md:pl-8"
                      src="./assets/Online_banking_SVG.svg"
                      alt="Pay Online"
                   />
-                  <div class="w-3/5 px-20 font-italic">
-                     <div data-aos="fade-down" data-aos-duration="250" class="flex flex-col items-center">
+                  <div class="md:w-3/5 md:px-20 md:text-4xl font-italic text-gray-800">
+                     <div data-aos="fade-down" data-aos-duration="250" class="flex flex-col items-center mt-10 md:mt-0">
                         <h3 class="text-4xl text-gray-800">Métodos de pago:</h3>
-                        <div class="text-gray-800 text-6xl">
-                           <i class="fab fa-cc-visa"></i>
-                           <i class="fab fa-cc-mastercard"></i>
-                           <i class="fab fa-cc-amex"></i>
-                           <i class="fab fa-cc-paypal"></i>
-                           <i class="fab fa-cc-stripe"></i>
-                           <i class="fab fa-cc-apple-pay"></i>
-                           <i class="fab fa-cc-amazon-pay"></i>
+                        <div class="text-gray-800 text-6xl flex justify-center flex-wrap">
+                           <i class="fab fa-cc-visa mx-2"></i>
+                           <i class="fab fa-cc-mastercard mx-2"></i>
+                           <i class="fab fa-cc-amex mx-2"></i>
+                           <i class="fab fa-cc-paypal mx-2"></i>
+                           <i class="fab fa-cc-stripe mx-2"></i>
+                           <i class="fab fa-cc-apple-pay mx-2"></i>
+                           <i class="fab fa-cc-amazon-pay mx-2"></i>
                         </div>
                      </div>
+                  </div>
+                  <div class="text-center md:hidden mt-10 md:mt-0">
+                     <a href="#section-4">
+                        <i class="fas fa-caret-down text-4xl text-gray-800 blink-effect"></i>
+                     </a>
                   </div>
                </div>
             </div>
@@ -128,18 +143,23 @@
                </svg>
             </div>
             <div class="flex-grow">
-               <div class="flex items-center justify-around">
+               <div class="flex md:flex-row flex-col items-center md:justify-around">
                   <img
                      data-aos="fade-up"
                      data-aos-duration="250"
-                     class="md:svg-desktop img-shadow md:w-2/5 mt-10 pl-8"
+                     class="md:svg-desktop svg-mobile md:w-2/5 w-4/5 img-shadow md:mt-10 md:pl-8"
                      src="./assets/Map_SVG.svg"
                      alt="Map"
                   />
-                  <div class="w-3/5 px-20" data-aos="fade-down" data-aos-duration="250">
-                     <p class="text-4xl text-gray-800 font-italic">
+                  <div class="md:w-3/5 md:px-20 md:text-4xl text-xl font-italic text-gray-800 px-4 mt-10 md:mt-0">
+                     <p data-aos="fade-down" data-aos-duration="250" class="md:text-left text-center">
                         Cuando sea asignado un repartidor podrá realizar un seguimiento en tiempo real del mismo.
                      </p>
+                  </div>
+                  <div class="text-center md:hidden mt-10 md:mt-0">
+                     <a href="#section-5">
+                        <i class="fas fa-caret-down text-4xl text-gray-800 blink-effect"></i>
+                     </a>
                   </div>
                </div>
             </div>
@@ -154,24 +174,31 @@
                </svg>
             </div>
             <div class="flex-grow">
-               <div class="flex items-center justify-around">
+               <div class="flex md:flex-row flex-col items-center md:justify-around">
                   <img
                      data-aos="fade-up"
                      data-aos-duration="250"
-                     class="md:svg-desktop md:w-2/5 img-shadow mt-10 pl-8"
+                     class="md:svg-desktop svg-mobile md:w-2/5 w-4/5 img-shadow md:mt-10 md:pl-8"
                      src="./assets/Mobile_notification_SVG.svg"
                      alt="Mobile Notification"
                   />
-                  <div class="w-3/5 px-20">
-                     <p data-aos="zoom-in" data-aos-duration="250" class="font-italic text-4xl text-gray-800">
+                  <div
+                     class="mt-10 md:mt-0 md:w-3/5 md:px-20 md:text-4xl text-xl md:text-left text-center font-italic text-gray-800 px-4"
+                  >
+                     <p data-aos="zoom-in" data-aos-duration="250">
                         Cualquier actualización sobre el estado de su pedido será notificado inmediatamente a través de
                         SMS.
                      </p>
                   </div>
+                  <div class="text-center md:hidden mt-10 md:mt-0">
+                     <a href="#section-6">
+                        <i class="fas fa-caret-down text-4xl text-gray-800 blink-effect"></i>
+                     </a>
+                  </div>
                </div>
             </div>
          </div>
-         <div id="section-6" class="flex flex-col min-h-screen">
+         <div id="section-6" class="flex flex-col md:min-h-screen">
             <div class="absolute w-full h-auto layer-wave hidden md:block">
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                   <path
@@ -185,11 +212,11 @@
                   <img
                      data-aos="fade-up"
                      data-aos-duration="250"
-                     class="svg-mobile md:w-2/5 img-shadow mt-10"
+                     class="svg-mobile md:w-2/5 img-shadow md:mt-10"
                      src="./assets/email.svg"
                      alt="Mobile Notification"
                   />
-                  <h1 class="text-5xl font-italic pb-5 text-gray-900">
+                  <h1 class="md:text-5xl text-3xl font-italic pb-5 text-gray-900 text-center mt-10 md:mt-0">
                      Boletín informativo
                   </h1>
                   <div class="w-full flex justify-center items-center">
@@ -207,23 +234,28 @@
                         Suscríbete
                      </button>
                   </div>
-                  <a href="#" class="hover:underline text-green-500 text-sm mt-2">
+                  <a href="#" class="hover:underline text-green-500 text-sm mt-2 text-center">
                      *Al ingresar su correo electrónico, acepta recibir correos electrónicos de marketing de TelePharma.
                   </a>
+                  <div class="text-center md:hidden">
+                     <a href="#section-1">
+                        <i class="fas fa-caret-up text-4xl text-gray-800 blink-effect"></i>
+                     </a>
+                  </div>
                </div>
             </div>
          </div>
       </main>
-      <footer class="bg-green-400 fixed bottom-0 min-w-full h-24 py-3">
+      <footer class="bg-green-400 md:fixed bottom-0 md:mt-0 mt-3 min-w-full h-16 py-3">
          <div class="h-full">
             <div class="flex justify-center items-center">
                <div class="flex justify-around w-1/2">
-                  <a href="#"><i class="fab fa-linkedin text-5xl text-gray-900"></i></a>
-                  <a href="#"><i class="fab fa-facebook-square text-5xl text-gray-900"></i></a>
-                  <a href="#"><i class="fab fa-twitter-square text-5xl text-gray-900"></i></a>
+                  <a href="#"><i class="fab fa-linkedin text-2xl text-gray-900"></i></a>
+                  <a href="#"><i class="fab fa-facebook-square text-2xl text-gray-900"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square text-2xl text-gray-900"></i></a>
                </div>
             </div>
-            <p id="autoria" class="text-gray-900 text-center mt-1"></p>
+            <p id="autoria" class="text-gray-900 text-center text-sm"></p>
          </div>
       </footer>
    </body>
