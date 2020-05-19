@@ -11,7 +11,8 @@
       "predeploy": "rm -rf dist build",
       "deploy": "npx parcel build $npm_package_main -d build --public-url /$npm_package_name",
       "postdeploy": "npx gh-pages -d build",
-      "build": "npx parcel build $npm_package_main -d build"
+      "build": "npx parcel build $npm_package_main -d build",
+      "build:win": "npx parcel build src/index.html -d build"
    },
    "keywords": [],
    "author": "Adrián, María y Samuel",
@@ -28,7 +29,7 @@
       "eslint-plugin-standard": "^4.0.1",
       "gh-pages": "^2.2.0",
       "parcel-bundler": "^1.12.4",
-      "parcel-plugin-robot": "^1.0.0",
+      "parcel-plugin-static-files-copy": "^2.3.1",
       "postcss-clean": "^1.1.0",
       "postcss-preset-env": "^6.7.0",
       "stylelint": "^13.3.3",
