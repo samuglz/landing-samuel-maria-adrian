@@ -54,3 +54,13 @@ function wheelListener(event) {
    removeActiveClass();
    activeDot.classList.add('active');
 }
+
+const suscribeButton = document.querySelector("#suscribeButton")
+suscribeButton.addEventListener("click", () => {
+   setTimeout(() => {
+      const emailInput = document.querySelector("#tlemail");
+      emailInput.value = ""
+   }
+   , 500)
+})
+   
